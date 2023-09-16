@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Schedule</title>
+    <title>Schedule 1</title>
     <link rel="stylesheet" href="asset/style.css" />
   </head>
   <body>
@@ -11,20 +11,20 @@
       <img class="logo" src="asset/bk_black2.png" alt="bk_black2" />
 
       <!--img src="asset/bsd_w.png" alt="Glitch fonts">
-        <!div class="time">December 8 - 10</div>
-        <div class="countdown-time">
-            <span class="d">22</span>
-            d
-            ::
-            <span class="h">1</span>
-            h
-            ::
-            <span class="m">48</span>
-            m
-            ::
-            <span class="s">6</span>
-            s
-        </div-->
+          <!div class="time">December 8 - 10</div>
+          <div class="countdown-time">
+              <span class="d">22</span>
+              d
+              ::
+              <span class="h">1</span>
+              h
+              ::
+              <span class="m">48</span>
+              m
+              ::
+              <span class="s">6</span>
+              s
+          </div-->
       <nav>
         <ul>
           <li class="active"><a href="#">home</a></li>
@@ -37,57 +37,237 @@
         </ul>
       </nav>
     </header>
-
     <hr class="gradient" />
+
     <section class="attends">
       <h2>Schedule</h2>
       <p class="text-gradient-purple attend-p">
         Bsides Kolkata Conference 2023
       </p>
-
       <div class="row">
-        <div class="button">
-          <li>
-            <span class="day">Conference</span>
-            <span class="date">22</span>
-            <span class="month">Sept</span> 2023
-          </li>
+        <!-- Toggle Button Conference & Workshops -->
+        <div class="button row" onclick="switchSchedule('Conference')">
+          <ul>
+            <li>Conference</li>
+            <li>22 Sept 2023</li>
+          </ul>
         </div>
-        <div class="button">
-          <li>
-            <span class="day">Workshops</span>
-            <span class="date">22</span>
-            <span class="month">Sept</span> 2023
-          </li>
+        <div class="button row" onclick="switchSchedule('Workshops')">
+          <ul>
+            <li>Workshops</li>
+            <li>22 Sept 2023</li>
+          </ul>
         </div>
       </div>
-
-      <div class="schedule">
-        <p class="time">9:00 am</p><br>
-        <p>Opening Keynote</p>
-        <div class="schedule-speaker">
-          <div class="speaker-img">
-            <img src="image/heath_adams.jpg" alt="heath_adams" />
-          </div>
-
-          <div class="attends">
-            <!-- <div class="about-speaker"> -->
-              <p class="name">Heath Adams</p>
-              <span class="work">Founder TCM Security</span>
-              <span class="topic">Opening Keynote</span>
-            </div>
-            <a class="button" href="" target="_parent">
-              Read More
-            </a>
-          </div>
-          
+      <!-- Conference Data -->
+      <div class="container" id="Conference">
+        <div class="schedule">
+          <h4 class="text-gradient-purple">Opening Keynote</h4>
+          <h4>9:00 AM</h4>
         </div>
-        
-        
+        <div class="schedule">
+          <div class="schedule-speaker">
+            <div class="speaker-img">
+              <img src="image/heath_adams.jpg" alt="heath_adams" />
+            </div>
+            <div class="attends">
+              <h3 class="text-gradient-purple">09.15 AM</h3>
+              <br />
+              <!-- <div class="about-speaker"> -->
+              <ul>
+                <li>Heath Adams</li>
+                <li>Founder TCM Security</li>
+              </ul>
+              <br />
+              <h3>Keynote Talk</h3>
+            </div>
+            <br />
+            <a class="button" href="" target="_parent"> Read More </a>
+          </div>
+        </div>
+
+        <div class="schedule">
+          <div class="schedule-speaker">
+            <div class="speaker-img">
+              <img src="image/heath_adams.jpg" alt="heath_adams" />
+            </div>
+            <div class="attends">
+              <h3 class="text-gradient-purple">10.00 AM</h3>
+              <br />
+              <!-- <div class="about-speaker"> -->
+              <ul>
+                <li>Heath Adams</li>
+                <li>Founder TCM Security</li>
+              </ul>
+              <br />
+              <h3>Breaking Barriers: Using XSS to Achieve RCE</h3>
+            </div>
+            <br />
+            <a class="button" href="" target="_parent"> Read More </a>
+          </div>
+        </div>
+        <div class="schedule">
+          <h4 class="text-gradient-purple">Coffee / Tea break</h4>
+          <h4>10:40 AM</h4>
+        </div>
+        <div class="schedule">
+          <div class="schedule-speaker">
+            <div class="speaker-img">
+              <img src="image/heath_adams.jpg" alt="heath_adams" />
+            </div>
+            <div class="attends">
+              <h3 class="text-gradient-purple">11:00 AM</h3>
+              <br />
+              <!-- <div class="about-speaker"> -->
+              <ul>
+                <li>Heath Adams</li>
+                <li>Founder TCM Security</li>
+              </ul>
+              <br />
+              <h3>
+                Developing a Linux Loadable Kernel Module based rootkit from
+                scratch
+              </h3>
+            </div>
+            <br />
+            <a class="button" href="" target="_parent"> Read More </a>
+          </div>
+        </div>
+        <div class="schedule">
+          <div class="schedule-speaker">
+            <div class="speaker-img">
+              <img src="image/heath_adams.jpg" alt="heath_adams" />
+            </div>
+            <div class="attends">
+              <h3 class="text-gradient-purple">11:45 AM</h3>
+              <br />
+              <!-- <div class="about-speaker"> -->
+              <ul>
+                <li>Heath Adams</li>
+                <li>Founder TCM Security</li>
+              </ul>
+              <br />
+              <h3>
+                How I Learned to Stop Worrying and Build a Modern Detection &
+                Response Program
+              </h3>
+            </div>
+            <br />
+            <a class="button" href="" target="_parent"> Read More </a>
+          </div>
+        </div>
+        <div class="schedule">
+          <h4 class="text-gradient-purple">Lunch break</h4>
+          <h4>12:00 PM</h4>
+        </div>
+        <div class="schedule">
+          <div class="schedule-speaker">
+            <div class="speaker-img">
+              <img src="image/heath_adams.jpg" alt="heath_adams" />
+            </div>
+            <div class="attends">
+              <h3 class="text-gradient-purple">01:30 PM</h3>
+              <br />
+              <!-- <div class="about-speaker"> -->
+              <ul>
+                <li>Heath Adams</li>
+                <li>Founder TCM Security</li>
+              </ul>
+              <br />
+              <h3>
+                Knock, Knock - Abusing Ephemeral Ports for Data Exfil and C2
+              </h3>
+            </div>
+            <br />
+            <a class="button" href="" target="_parent"> Read More </a>
+          </div>
+        </div>
+        <!-- Workshops div -->
+        <div class="container" id="Workshops">
+          <div class="schedule">
+            <p class="time">10.00AM - 01.00PM</p>
+            <br />
+            <p>Heath Adams, Angie Jones</p>
+            <div class="schedule-speaker">
+              <div class="speaker-img">
+                <img src="image/heath_adams.jpg" alt="heath_adams" />
+              </div>
+
+              <div class="attends">
+                <!-- <div class="about-speaker"> -->
+                <p class="name">Heath Adams</p>
+                <span class="work">Founder TCM Security</span>
+                <span class="topic">Opening Keynote</span>
+              </div>
+              <a class="button" href="" target="_parent"> Read More </a>
+            </div>
+          </div>
+          <div class="schedule">
+            <p class="time">9:00 am</p>
+            <br />
+            <p>Opening Keynote</p>
+            <div class="schedule-speaker">
+              <div class="speaker-img">
+                <img src="image/heath_adams.jpg" alt="heath_adams" />
+              </div>
+
+              <div class="attends">
+                <!-- <div class="about-speaker"> -->
+                <p class="name">Heath Adams</p>
+                <span class="work">Founder TCM Security</span>
+                <span class="topic">Opening Keynote</span>
+              </div>
+              <a class="button" href="" target="_parent"> Read More </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Workshops Data -->
+      <div class="container" id="Workshops">
+        <div class="schedule">
+          <div class="schedule-speaker">
+            <div class="speaker-img">
+              <img src="image/heath_adams.jpg" alt="heath_adams" />
+            </div>
+            <div class="attends">
+              <h3 class="text-gradient-purple">10:00 AM - 01:00 PM</h3>
+              <br />
+              <!-- <div class="about-speaker"> -->
+              <ul>
+                <li>Heath Adams, Anjie Jones</li>
+                <li>Endpoint Forensics - A Hands On Workshop</li>
+              </ul>
+              <br />
+              <h3>Keynote Talk</h3>
+            </div>
+            <br />
+            <a class="button" href="" target="_parent"> Read More </a>
+          </div>
+        </div>
+        <div class="schedule">
+            <div class="schedule-speaker">
+              <div class="speaker-img">
+                <img src="image/heath_adams.jpg" alt="heath_adams" />
+              </div>
+              <div class="attends">
+                <h3 class="text-gradient-purple">01:30 AM - 05:30 PM</h3>
+                <br />
+                <!-- <div class="about-speaker"> -->
+                <ul>
+                  <li>Heath Adams, Anjie Jones</li>
+                  <li>Endpoint Forensics - A Hands On Workshop</li>
+                </ul>
+                <br />
+                <h3>Keynote Talk</h3>
+              </div>
+              <br />
+              <a class="button" href="" target="_parent"> Read More </a>
+            </div>
+        </div>
       </div>
     </section>
-    
 
+    <hr class="gradient" />
     <footer>
       <ul class="linear-list">
         <li>
@@ -111,5 +291,21 @@
       </a>
       <p class="copyright">© 2023 BSides Kolkata. Made with ❤❤️.</p>
     </footer>
+    <script>
+      function switchSchedule(scheduleName) {
+        switch (scheduleName) {
+          case "Conference":
+            document.getElementById("Conference").style.display = "block";
+            document.getElementById("Workshops").style.display = "none";
+            break;
+          case "Workshops":
+            document.getElementById("Conference").style.display = "none";
+            document.getElementById("Workshops").style.display = "block";
+            break;
+          default:
+            break;
+        }
+      }
+    </script>
   </body>
 </html>
